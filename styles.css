@@ -10,10 +10,10 @@ nav ul {
   padding: 0;
   overflow: hidden;
   color: #FFF;
-font-family: Roboto;
+  font-family: 'Roboto', sans-serif;
 font-size: 16px;
 font-style: normal;
-font-weight: 700;
+font-weight: 400;
 line-height: normal; 
 }
 
@@ -50,4 +50,24 @@ nav {
     height: 30px;
     width: auto;
     background-color:#252525;
+}
+
+#clock {
+    font-size: 14px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    top: 8px;
+}
+
+.logo {
+  width: 150px; /* adjust the size according to your preference */
+  height: auto;
+}
+
+.logo img {
+  left: 300px;
+  position: absolute;
+  width: 177.2px;
+  height: 177.2px;
 }
