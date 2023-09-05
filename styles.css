@@ -14,7 +14,9 @@ nav ul {
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
-line-height: normal; 
+line-height: normal;
+margin-left: 400px;
+margin-top: 30px;
 }
 
 nav li {
@@ -52,12 +54,21 @@ nav {
     background-color:#252525;
 }
 
-#clock {
+.clock {
     font-size: 14px;
     color: #FFF;
     font-family: 'Roboto', sans-serif;
     text-align: right;
-    top: 8px;
+
+}
+.clock p {
+    font-size: 14px;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    padding: 7px 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .logo {
@@ -71,3 +82,16 @@ nav {
   width: 177.2px;
   height: 177.2px;
 }
+
+#dude {
+    height: auto;
+    width: auto;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+      left:45%;
+      right:55%;
+    }
+  }
