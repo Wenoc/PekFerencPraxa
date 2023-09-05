@@ -36,8 +36,6 @@ nav li a:hover {
   color: #fff;
 }
 
-nav {
-}
 
 .navbar-background {
   display: flex;
@@ -83,10 +81,11 @@ nav {
   height: 177.2px;
 }
 
-#dude {
+.dude {
     height: auto;
     width: auto;
     object-fit: cover;
+    display: flex;
 }
 
 @media only screen and (max-width: 600px) {
@@ -95,3 +94,11 @@ nav {
       right:55%;
     }
   }
+
+.floater{
+    position: absolute;
+    width: 629px;
+    height: 348px;
+    flex-shrink: 0; 
+    background: rgba(0, 0, 0, 0.30); 
+}
