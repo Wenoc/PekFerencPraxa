@@ -45,3 +45,9 @@ nav {
   height: 93px; /* Set the desired height for your navbar */
   background-color: #B50014; /* Set the desired background color */
 }
+
+.bar{
+    height: 30px;
+    width: auto;
+    background-color:#252525;
+}
