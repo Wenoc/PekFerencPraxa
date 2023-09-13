@@ -3,31 +3,48 @@
     margin: 0;
 }
 
+:root{
+   --main-color:#B50014;
+   --text-color:#FFF;
+   --p-size:16px;
+}
 
 nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  color: #FFF;
+  color: var(--text-color);
   font-family: 'Roboto', sans-serif;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-margin-left: 400px;
-margin-top: 30px;
+  font-size: var(--p-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 400px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 nav li {
-  display: inline-block;
+  display: flex;
 }
 
 nav li a {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 8px 16px;
   text-decoration: none;
-  color: #FFF;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -36,14 +53,46 @@ nav li a:hover {
   color: #fff;
 }
 
+.download p:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.download p {
+  margin-top: 30px;
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.download p::before{
+  content: url(resources/Frame.svg);
+}
+
+.download{
+  display: block;
+}
+
+#dl{
+  overflow: hidden;
+  color: var(--text-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--p-size);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 
 .navbar-background {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   top: 0;
   left: 0;
   width: auto;
   height: 93px; /* Set the desired height for your navbar */
-  background-color: #B50014; /* Set the desired background color */
+  background-color: var(--main-color); /* Set the desired background color */
 }
 
 .bar{
@@ -54,19 +103,23 @@ nav li a:hover {
 
 .clock {
     font-size: 14px;
-    color: #FFF;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     text-align: right;
 
 }
 .clock p {
     font-size: 14px;
-    color: #FFF;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     text-align: right;
     padding: 7px 300px;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.clock p::before{
+  content: url(resources/clock.svg);
 }
 
 .logo {
@@ -102,4 +155,33 @@ nav li a:hover {
     height: 348px;
     flex-shrink: 0; 
     background: rgba(0, 0, 0, 0.30); 
+    top: 30%;
+    left: 0;
 }
+
+.floater p{
+  text-align: left;
+  padding-top: 15px;
+  padding-left: 298px;
+  padding-right: 56px;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--p-size);
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px; 
+  color: var(--text-color);
+}
+
+.floater h1{
+  text-align: left;
+  padding-top: 67px;
+  padding-right: 87px;
+  padding-left: 300px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: var(--text-color);
+}
+
